@@ -11,6 +11,7 @@ mode        : selfcontained # {standalone, draft}
 license     : by-nc-sa
 github      :
   user      : warderm6
+  repo      : DTProduct
   
 ---
 
@@ -30,7 +31,8 @@ github      :
 ## Dataset
 
 1. The dataset has been obtained from [GLOBAL FOREST WATCH](http://www.globalforestwatch.org/country/PER) which has a record of Peru's forest between 2000 and 2012. 
-2. Shiny application source code is available on the [GitHub](http://github.com/warderm6/MOOCs/tree/master/Coursera/DataScience_spec/5%20Reproducible%20Research/shiny%20peru%20forest).
+2. Shiny application source code is available on the [GitHub](http://github.com/warderm6/MOOCs/tree/master/Coursera/DataScience_spec/5%20Reproducible%20Research/shiny%20peru%20forest). 
+3. Shiny Link: [Application online](https://warderm6.shinyapps.io/shiny_peru_forest/)
 
 
 ```r
@@ -47,20 +49,12 @@ names(dataset)
 ## [11] "gain_ha"                    "gain_percent"
 ```
 
-```r
-dim(dataset)
-```
-
-```
-## [1] 2275   12
-```
-
 ---
 
 ## Shiny Application
 
-<iframe src="http://warderm6.shinyapps.io/shiny_peru_forest/" width="80%" 
-height="100%" frameborder="0">Loading</iframe>
+<iframe src="http://warderm6.shinyapps.io/shiny_peru_forest/" width="150%" 
+height="150%" frameborder="0">Loading</iframe>
 
 
 ---
