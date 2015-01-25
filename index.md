@@ -1,0 +1,72 @@
+---
+title       : Peru Forest Explorer
+subtitle    : Developing Data Products - Course Project.
+              January 2015
+author      : Jorge Salvador Paredes Merino
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+license     : by-nc-sa
+github      :
+  user      : warderm6
+  
+---
+
+## Motivation
+
+> - Explore forest data in my country by departments or regions
+
+> - Grasp and became aware about deforestation
+
+> - Development of an interactive visualization about the topic
+
+> - <img height=350 src="http://voices.nationalgeographic.com/files/2012/01/Peruvian-amazon-cut1-936x700.jpg">
+
+
+--- 
+
+## Dataset
+
+1. The dataset has been obtained from [GLOBAL FOREST WATCH](http://www.globalforestwatch.org/country/PER) which has a record of Peru's forest between 2000 and 2012. 
+2. Shiny application source code is available on the [GitHub](http://github.com/warderm6/MOOCs/tree/master/Coursera/DataScience_spec/5%20Reproducible%20Research/shiny%20peru%20forest).
+
+
+```r
+dataset = read.csv("_PER_.csv")
+names(dataset)
+```
+
+```
+##  [1] "country_code"               "region_code"               
+##  [3] "country"                    "region"                    
+##  [5] "year"                       "min_percent_canopy_density"
+##  [7] "loss_ha"                    "loss_percent"              
+##  [9] "extent_ha"                  "extent_percent"            
+## [11] "gain_ha"                    "gain_percent"
+```
+
+```r
+dim(dataset)
+```
+
+```
+## [1] 2275   12
+```
+
+---
+
+## Shiny Application
+
+<iframe src="http://warderm6.shinyapps.io/shiny_peru_forest/" width="80%" 
+height="100%" frameborder="0">Loading</iframe>
+
+
+---
+
+## Thanks
+
+* [GLOBAL FOREST WATCH](http://www.globalforestwatch.org/)
+* [Developing Data Products Course](http://class.coursera.org/devdataprod-010) - Coursera
+* [Ramnath Vaidyanathan](https://github.com/ramnathv) for slidify.
